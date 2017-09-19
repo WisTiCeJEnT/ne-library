@@ -10,6 +10,13 @@ def plist(n):
             pls.append(i)
     return pls          #return list of prime
 
+def isPrime(n):
+    pls = plist(n//2)
+    for i in pls:
+        if n%i==0:
+            return False
+    return True
+
 def gcd(a,b):
     if(a%b==0):
         return b
