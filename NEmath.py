@@ -1,18 +1,13 @@
 def plist(n):
     pls = []
-    ls = []
-    for i in range(2,n+1):
-        ls.append(i)
-    while(ls):
-        tmp = ls[0]
-        pls.append(ls.pop(0))
-        if(tmp*tmp<=n):
-            for i in ls:
-                if(i%tmp==0):
-                     ls.remove(i)
-        else:
-            pls.extend(ls)
-            break
+    ls = list(range(n))
+    for i in range(2,int(n**0.5)+1):
+        if ls[i]:
+            for dele in range(i+i,n,i):
+                ls[dele] = False
+    for i in range(2,n):
+        if ls[i]:
+            pls.append(i)
     return pls          #return list of prime
 
 def gcd(a,b):
