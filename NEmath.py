@@ -1,5 +1,6 @@
 def plist(n):
     pls = []
+    n += 1
     ls = list(range(n))
     for i in range(2,int(n**0.5)+1):
         if ls[i]:
