@@ -7,12 +7,13 @@ def plist(n): #Prime list
     #Create list of prime numbers from 2 to N
     return primelist
 
-def isPrime(n):
+def isPrime(n): #Is 'n' is prime number?
     return #IsPrime in boolean
 
 def gcd(a,b): #Greatest common divisor
     return #GCD of A&B
 ```
+
 conv.py
 ```python
 def intStr(n): #number in int or string  ex: 1
