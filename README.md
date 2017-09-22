@@ -10,6 +10,9 @@ def plist(n): #Prime list
 def isPrime(n): #Is 'n' is prime number?
     return #IsPrime in boolean
 
+def isPalin(n): #Is 'n' is palindome?
+    return #IsPalin in boolean
+
 def gcd(a,b): #Greatest common divisor
     return #GCD of A&B
 ```
